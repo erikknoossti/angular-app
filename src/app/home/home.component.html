@@ -1,0 +1,6 @@
+<h1>Välkommen till {{ title }}</h1>
+<h2>Antal klick: {{ count }}</h2>
+<app-custom-button
+  [count]="count"
+  (countChanged)="updateCount($event)"
+></app-custom-button>
